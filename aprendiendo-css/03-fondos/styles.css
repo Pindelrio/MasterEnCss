@@ -1,0 +1,37 @@
+body{
+    background-color: #ccc;
+    /* background-image: url(img/pattern1.jpg);
+    background-repeat: no-repeat; */
+    background-image: url(img/Backgroud1.jpg);
+    /* background-size: 100% 100%; */
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+#caja{
+    border: 5px solid #000;
+    padding: 10px;
+    background-color: rgb(95, 131, 212);
+
+    /* Propietats de texts */
+    color: white;
+    font-family: serif;
+    text-align: right;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+h2{
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    background-image: url(img/pattern2.jpg);
+}
+p{
+    /* Propietats de texts */
+    color: white;
+    text-align: justify;
+    text-indent: 20px; /* Sangria */
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}

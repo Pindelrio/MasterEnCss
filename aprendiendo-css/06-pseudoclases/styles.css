@@ -1,0 +1,40 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+ul li:first-child{
+    color: rgb(202, 34, 34);
+}
+
+ul li:nth-child(3){
+    color: rgb(24, 194, 185);
+}
+ul li:last-child{
+    color: rgba(151, 52, 130, 0.288);
+}
+
+#enllaç{
+font-size: 15px;
+}
+#enllaç:link{
+color: purple;
+}
+#enllaç:visited{
+    color: red;
+}
+#enllaç:hover{
+    color: blue;
+}
+#enllaç:active{
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+input[type="text"]{
+    font-size: 20px;
+    margin: 10px;
+}
+input[type="text"]:focus{
+    border: 4px dashed red;
+}

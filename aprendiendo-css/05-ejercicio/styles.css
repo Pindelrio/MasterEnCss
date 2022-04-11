@@ -1,0 +1,119 @@
+/* 
+Ejercicio comleto con HTML y CSS
+1. Crear un documento HTML y vincularlo con un CSS
+2. Crear una estructura HTML que cuente con un CONTENEDOR GENERAL, CABEZERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PPAL, ELEMENTOS DENTRO DEL CONTENEDOR PPAL Y FOOTER.
+3. Todo el contenido debe estar dentro del contenedor general y su ancho será de 1200px y estar centrado
+4. Header debe ocupar el 100% del ancho y tener un texto grande centrado.
+5. Menu debe tenerlos elementos uno al lado del otro
+6. El contenido ppal debe tener un ancho del 70%
+7. El contenido dentro del contenedor ppal debe ser una cuadricula con 4 lineas de 2 cajas.
+8. La barra lateral debe temer un ancho del 30%
+9. El footer debe tener un anco del 100% del div que lo contiene y estar abajo del todo
+
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 1200px;
+    /* Centrar pagina */
+    margin: 0px auto; 
+    background-color: #ffff;
+    margin-top: 20px;
+}
+header{
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    background-color: aquamarine;
+    text-shadow: 5px 5px 0px gray
+}
+#menu{
+    background-color: aquamarine;
+}
+#menu ul li:hover{
+    background:  aqua;
+    cursor: pointer;
+}
+#menu ul li:hover a{
+    color: wheat;
+}
+#menu ul li{
+    background-color: coral;
+    display: block;
+    float: left;
+    padding: 15px;
+    
+    /* display: inline; */
+    border: 1px solid #ccc;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#contenido{
+    display: block;
+    float: left;
+    width: 70%;
+    background-color: burlywood;
+}
+#contenido div{
+    display: block;
+    float: left;
+    border: 1px solid #000;
+    margin: 10px;
+    min-width: 380px;
+    min-height: 300px;
+    box-shadow: 0px 0px 15px gray;
+    /* sombra interna */
+    /* box-shadow: 0px 0px 15px gray inset; */
+}
+aside{
+    display: block;
+    float: left;
+    width: 30%;
+    background-color: brown;
+    overflow-y:scroll;
+    max-height: 500px;
+}
+footer{
+    
+    background-color: darksalmon;
+    text-align: center;
+    padding: 20px;
+}
+.libre{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border: 1px solid #000;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    z-index: 10;
+}
+.libre2{
+    position: absolute;
+    top:53%;
+    left: 51%;
+    border: 1px solid #000;
+    background-color: green;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+}
+.fija{
+    position: fixed;
+    top:50%;
+    left: 0%;
+    border: 1px solid #000;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+}

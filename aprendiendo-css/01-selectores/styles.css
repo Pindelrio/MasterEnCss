@@ -1,0 +1,47 @@
+/* SELECTORES */
+/* universal */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Etiqueta */
+h1{
+    background: red;
+    color: white;
+    padding: 10px;
+}
+footer a{
+    color: aqua;
+}
+/* Selector id */
+#description, #title{
+    border: 1px solid black;
+}
+
+/* Selector de clase */
+.parrafo{
+    background-color: green;
+}
+/* Selector de atributo */
+#usuario form{
+    border: 5px solid blue;
+}
+
+#usuario form *{
+    display: block;
+}
+input[type="text"]{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+/* Selectores hijo */
+#menu ul>li >a{
+    color: red;
+}
+
+/* PRIORIDAD 
+    - Aplica com mes avall a la lista d'estils
+    - Aplica com mes especific #menu li
+    - Posant !important;
+*/
